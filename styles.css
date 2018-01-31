@@ -1,0 +1,143 @@
+  /********** CSS RESET ***********/
+
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+
+  main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  blockquote, q {
+    quotes: none;
+  }
+
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /********** END CSS RESET ***********/
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header * {
+    display: block;
+  }
+
+  header {
+    position: relative;
+    width: 800px;
+    height: 250px;
+    padding-top: 30px;
+    margin-left: 30px;
+
+  }
+
+  body {
+    background-image: url('image/1023.png');
+  }
+  #mySketch{
+    width:800px;
+    height:250px;
+  } 
+  #container {
+    /*border: red 1px solid;*/
+    width: 860px;
+    min-height: 1000px;
+    margin: auto;
+    background-color: #ff9980;
+  }
+
+  section {
+    /*border: red 1px solid;*/
+
+    width: 810px;
+    min-height: 680px;
+    padding: 20px;
+    margin: 5px;
+  }
+
+  section>nav {
+    float: left;
+    width: 345px;
+    min-height: 625px;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    background-color: #ffebe6;
+  }
+  #col1 {
+  margin-right: 25px;
+  }
+  #col2 {
+
+  }
+
+  div section h2 {
+    font-size: 56px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    color: #663300;
+    padding: 5px;
+  }
+
+  nav ol {
+    padding-left: 55px;
+  }
+
+  nav ul {
+    padding-left: 55px;
+    list-style-type:disc;
+  }
+
+  nav li {
+    font-size: 24px;
+    color: #cc3300;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+
+  section a {
+    color: #d06038;
+    text-decoration: none;
+  }
+
+  footer {
+    
+    background-color: #ffd6cc;
+    width: 820px;
+    min-height: 80px;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    font-family: georgia;
+    color: #330000;
+    font-size: 18px;
+  }
+
+  footer a {
+    color: #001a66;
+  }
