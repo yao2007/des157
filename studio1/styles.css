@@ -1,0 +1,103 @@
+body {
+  height: 1000px; /* fix for codepen */
+  /*background: linear-gradient(205deg, #333, indigo);*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: antiquewhite;
+}
+header {
+  min-width: 600px;
+}
+h1,
+article {
+  margin-left: 12px;
+}
+h1 {
+  position: relative;
+  top: 48px;
+  left: 24px;
+  z-index: 1;
+  font-family: "Lobster", cursive;
+  font-size: 4em;
+  font-weight: normal;
+  color: deeppink;
+}
+
+article {
+  position: relative;
+  top: -8px;
+  width: 80%;
+  min-width: 700px;
+  border-radius: 18px;
+  padding: 24px;
+  color: antiquewhite;
+  background-color: #222;
+}
+
+div {
+  margin: 2%;
+}
+
+label {
+  width: 5em;
+  text-align: right;
+  display: inline-block;
+  padding-right: 3%;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 3%;
+  border: none; /*remove default*/
+  border-radius: 3px;
+  border-bottom: 8px deeppink solid;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: hotpink;
+  color: antiquewhite;
+}
+
+input[type="text"]:focus {
+  border-bottom: 8px cornflowerblue solid;
+  background-color: orange;
+  color: black;
+}
+
+div:last-child {
+  text-align: center;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  width: 20%;
+  margin: 2%;
+  padding: 12px;
+  border: none; /*remove default*/
+  border-radius: 3px;
+  border-bottom: 4px orange solid;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: antiquewhite;
+  color: #333;
+}
+
+section p {
+  width: 80%;
+  min-width: 700px;
+  margin-left: 12px;
+  padding: 24px;
+  border-radius: 11px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  background-color: purple;
+  color: antiquewhite;
+}
+
+.show {
+  display:block;
+}
+
+.hide {
+  display:none;
+}

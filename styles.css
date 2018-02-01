@@ -88,6 +88,10 @@
     text-align: center;
     background-color: #ffebe6;
   }
+  nav>p {
+    text-align: left;
+    text-indent:2em; padding
+  }
   #col1 {
   margin-right: 25px;
   }
