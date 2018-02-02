@@ -1,53 +1,26 @@
-console.log("reading");
 
-// store form fields in variables
-var userName = document.f.userName.value;
-var userColor = document.f.userColor.value;
 var results = document.getElementById("results");
 var myMsg = document.getElementById("myMsg");
 
-// capture the submit event
 document.f.onsubmit = processForm;
-
-// prompt1: capture the reset event and send it a callback function named resetForm
 document.f.onreset = resetForm;
 
 function resetForm() {
   myMsg.innerHTML = "";
   results.className="hide";
 }
-// define process functionS
+
 function processForm() {
-  userName = document.f.userName.value;
-  userColor = document.f.userColor.value;
-  // easter egg
-  switch (userColor) {
-    case "blue":
-      myMsg.style.backgroundColor = "blue";
-      break;
-    case "orange":
-      myMsg.style.backgroundColor = "orange";
-      break;
-    default:
-      myMsg.style.backgroundColor = "#333";
-  }
+  var place = document.f.place.value;
+  var food1 = document.f.food1.value;
+  var food2 = document.f.food2.value;
+  var food3 = document.f.food3.value;
+  var food4 = document.f.food4.value;
+  var food5 = document.f.food5.value;
 
   myMsg.innerHTML =
-    "Hi, " +
-    userName +
-    "!<br>You love the color <em>" +
-    userColor +
-    "</em>!  Have a great day!";
-  
+    "Hi guys! So today I woke up and I literally wanted to do my makeup using ONLY the food that I have in my " + place + " – just to see if I could do it! Considering I only used "+food1+ ", " + food2 + ", " + food3 + ", " + food4 + " and " + food5 + ", I think it turned out ok! If you guys want to create your own full makeup look using the food you have in your house, make sure to use the hashtag: #foodmakeupchallenge so I can see!!";
+
   results.className="show";
-  //prevent page from reloading
   return false;
 }
-
-/* 
-prompt2: 
-define the resetForm function to:
-  1. set the myMsg.innerHTML to an empty string
-  2. set the class attribute for myMsg to "hide"
-*/
-
