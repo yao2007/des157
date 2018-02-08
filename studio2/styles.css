@@ -1,6 +1,6 @@
 /* basic body declarations */
 body {
-
+  width: 1440px;
   /* background-image: url("https://github.com/yao2007/des157/blob/gh-pages/image/cat.jpg?raw=true"); */
   background-color: #cccccc;
   font-family: Helvetica, sans-serif;
@@ -27,17 +27,11 @@ button {
   position: absolute;
   margin: auto;
 }
-#pen {
+#glass {
   /* border: 1px red solid; */
-  position: relative;
-  bottom: -18px;
-
-}
-.hover #glass{
-  /* border: 1px red solid; */
-  opacity:0.5;
   position: relative;
   bottom: 15px;
+
 }
 #bottle{
   /* border: 1px red solid; */
@@ -204,7 +198,6 @@ footer {
   border-radius: 11px;
   font-size: 15px;
   text-align: center;
-
   background-color: #661a00;
   color: #ffc6b3;
 }
@@ -218,4 +211,47 @@ footer a{
 
 .hide {
   display:none;
-} */
+}
+
+@media only screen and (max-width: 768px) {
+  #pen {
+    border: 1px red solid;
+    position: relative;
+    bottom: -18px;
+
+  }
+  #bottle{
+    /* border: 1px red solid; */
+    position: relative;
+    bottom: -544px;
+    left: -312px;
+  }
+  #pen {
+    /* border: 1px red solid; */
+    position: relative;
+    bottom: -18px;
+
+  }
+
+  .show4 {
+    opacity:1;
+    position: relative;
+    bottom: 15px;
+    /* display: block; */
+  }
+  .show2 {
+    opacity:1;
+    position: relative;
+    bottom: -544px;
+    left: -312px;
+    /* display: block; */
+  }
+  .show3 {
+    opacity:1;
+    position: relative;
+    bottom: -18px;
+
+    /* display: block; */
+  }
+
+}
