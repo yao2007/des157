@@ -7,11 +7,7 @@ body {
   font-size: 100%;
   padding:24px;
 }
-/* large, colorful button */
-/* #cat img {
-    opacity: 0;
-    filter: alpha(opacity=50); /* For IE8 and earlier
-} */
+
 
 button {
   width:10%;
@@ -98,85 +94,7 @@ button {
 
 
 
-/* body {
-  font-family: Georgia, cursive;
-  background-image: url("mlimage/background1.jpg");
-}
-header {
-  min-width: 600px;
-}
-h1,article {
-  margin-left: 12px;
-}
-h1 {
-  position: relative;
-  top: 40px;
-  left: 24px;
-  z-index: 1;
-  font-size: 5em;
-  font-weight: normal;
-  color: #e63900;
-}
 
-article {
-  position: relative;
-  top: -8px;
-  width: 80%;
-  min-width: 700px;
-  border-radius: 18px;
-  padding: 24px;
-  color: antiquewhite;
-  background-color: #222;
-}
-
-div {
-  margin: 2%;
-}
-
-label {
-  width: 5em;
-  text-align: right;
-  display: inline-block;
-  padding-right: 3%;
-}
-
-input[type="text"] {
-  font-family: Georgia, cursive;
-  width: 30%;
-  /* padding: 3%; */
-  border: none; /*remove default*/
-  border-radius: 2px;
-  font-size: 1.2em;
-  background-color: antiquewhite;
-  color: #e63900;
-}
-
-input[type="text"]:focus {
-  border-bottom: 2px deeppink solid;
-  background-color: lightpink;
-  color: black;
-}
-
-div:last-child {
-  width:400px;
-  /* border: red 1px solid; */
-  text-align:right;
-}
-
-input[type="reset"],
-input[type="submit"] {
-  width: 30%;
-  margin: 2%;
-  padding: 2px;
-  border: none; /*remove default*/
-  border-radius: 3px;
-  border-bottom: 4px orange solid;
-
-  font-weight: bold;
-  font-size: 1.5em;
-  background-color: antiquewhite;
-  color: #333;
-}
 
 section p {
   position: relative;
