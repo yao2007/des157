@@ -1,17 +1,17 @@
 /* basic body declarations */
 body {
 
-  background-image: url("https://github.com/yao2007/des157/blob/gh-pages/image/cat.jpg?raw=true");
+  /* background-image: url("https://github.com/yao2007/des157/blob/gh-pages/image/cat.jpg?raw=true"); */
   background-color: #cccccc;
   font-family: Helvetica, sans-serif;
   font-size: 100%;
   padding:24px;
 }
 /* large, colorful button */
-#cat img {
+/* #cat img {
     opacity: 0;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
+    filter: alpha(opacity=50); /* For IE8 and earlier
+} */
 
 button {
   width:10%;
@@ -23,10 +23,64 @@ button {
   color:antiquewhite;
 }
 
+#init {
+  position: absolute;
+  margin: auto;
+}
+#pen {
+  /* border: 1px red solid; */
+  position: relative;
+  bottom: -18px;
 
+}
+#glass{
+  /* border: 1px red solid; */
+  position: relative;
+  bottom: 15px;
+}
+#bottle{
+  /* border: 1px red solid; */
+  position: relative;
+  bottom: -544px;
+  left: -312px;
+}
 
+.show {
+  opacity:1;
+  position: relative;
+  bottom: 15px;
+  /* display: block; */
+}
+.show2 {
+  opacity:1;
+  position: relative;
+  bottom: -544px;
+  left: -312px;
+  /* display: block; */
+}
+.show3 {
+  opacity:1;
+  position: relative;
+  bottom: -18px;
 
+  /* display: block; */
+}
 
+.hi {
+  opacity:0.5;
+}
+.hi2 {
+  opacity:0.5;
+}
+.hi3 {
+  opacity:0.5;
+}
+.show4 {
+  display:block;
+}
+
+.hide {
+  display:none
 
 
 
