@@ -33,8 +33,9 @@ button {
   bottom: -18px;
 
 }
-#glass{
+.hover #glass{
   /* border: 1px red solid; */
+  opacity:0.5;
   position: relative;
   bottom: 15px;
 }
@@ -44,8 +45,14 @@ button {
   bottom: -544px;
   left: -312px;
 }
+#pen {
+  /* border: 1px red solid; */
+  position: relative;
+  bottom: -18px;
 
-.show {
+}
+
+.show4 {
   opacity:1;
   position: relative;
   bottom: 15px;
@@ -66,16 +73,21 @@ button {
   /* display: block; */
 }
 
+#myImg{
+  border: orange 10px solid;
+  weight:800px;
+  height:800px;
+}
 .hi {
-  opacity:0.5;
+  opacity:0;
 }
 .hi2 {
-  opacity:0.5;
+  opacity:0;
 }
 .hi3 {
-  opacity:0.5;
+  opacity:0;
 }
-.show4 {
+.show {
   display:block;
 }
 
@@ -185,8 +197,8 @@ section p {
 
 footer {
   position: absolute;
-  top:610px;
-  width: 80%;
+  top:1700px;
+  width: 60%;
   min-width: 700px;
   margin-left: 12px;
   padding: 5px 24px 5px 24px;
