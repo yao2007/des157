@@ -2,7 +2,7 @@
 body {
   width: 1440px;
   /* background-image: url("https://github.com/yao2007/des157/blob/gh-pages/image/cat.jpg?raw=true"); */
-  background-color: #cccccc;
+  background-color:lightpink;
   font-family: Helvetica, sans-serif;
   font-size: 100%;
   padding:24px;
@@ -12,7 +12,9 @@ body {
     opacity: 0;
     filter: alpha(opacity=50); /* For IE8 and earlier
 } */
-
+title{
+  display: block;
+}
 button {
   width:10%;
   height:25px;
