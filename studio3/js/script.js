@@ -17,6 +17,7 @@ function draw() {
 
 
 'use strict'
+var i=80;
 
 
 var pixel = document.querySelector('#pixel');
@@ -32,9 +33,28 @@ var scoreCount=0;
 var count =30;
 var counter = setInterval(timingOut, 1000);
 
+pixel.addEventListener("click", eating);
+
 pixel.addEventListener("click", updateLife);
 var life =0;
 var lifeCount=0;
+
+var m = document.getElementById('move');
+m.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+function mouseUp() {
+    window.removeEventListener('mousemove', move, true);
+}
+
+function mouseDown(e) {
+    window.addEventListener('mousemove', move, true);
+}
+
+function move(e) {
+    m.style.top = e.clientY + 'px';
+    m.style.left = e.clientX + 'px';
+};
 // define moveDiv
 function moveDiv(){
 
@@ -68,7 +88,6 @@ function updateLife() {
 function timingOut()
 {
   count=count-1;
-  section.style.opacity = count*0.025;
   if (count < 0)
   {
      return;
@@ -76,12 +95,19 @@ function timingOut()
   document.getElementById("timerId").innerHTML = "Timer: "+ count;
 }
 
-// var s= Snap(800,600);
-//
-// var bigCircle = s.circle(150, 150, 80);
-//
-// bigCircle.attr({
-//     fill: "#00306E",
-//     stroke: "#90C3D4",
-//     strokeWidth: 2
-// });
+var s= Snap(800,600);
+
+
+var bigCircle = s.circle(150, 150, 80);
+
+bigCircle.attr({
+    fill: "#00306E",
+    stroke: "#90C3D4",
+    strokeWidth: 2
+});
+
+function eating(){
+  var i = i +5;
+
+  bigCircle = s.circle(150, 150, i);
+}
