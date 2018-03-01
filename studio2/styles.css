@@ -234,6 +234,7 @@ footer a{
     bottom: -18px;
 
   }
+  #myImg
 
   .show4 {
     opacity:1;
@@ -252,6 +253,7 @@ footer a{
     opacity:1;
     position: relative;
     bottom: -18px;
+
 
     /* display: block; */
   }
