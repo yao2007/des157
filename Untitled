@@ -1,0 +1,43 @@
+body {
+  font-family: Georgia, sans-serif;
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+table {
+  width: 1020px;
+}
+
+td {
+  vertical-align: top;
+  padding: 6px;
+}
+
+.ch1 {
+  text-align: right;
+}
+
+.full-width {
+  width: 98%;
+  font-family: Georgia, serif;
+}
+
+.ch2 {
+  vertical-align: bottom;
+}
+
+#submit {
+  background-color: #f00;
+  border: 0;
+  color: #fff;
+  float: right;
+  text-transform: uppercase;
+  padding: 6px;
+  width: 110px;
+  font-family: Arial, sans-serif;
+}
+
+input, select {
+  border: 1px solid #ccc;
+}
