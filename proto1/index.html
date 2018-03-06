@@ -1,10 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Interactive Wireframe</title>
-    <link href="styless.css" rel="stylesheet">
-
+    <link href="_css/styless.css" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -21,9 +21,9 @@
           <textarea rows="4" cols="50" name="comment" form="usrform">
             Put your links here...</textarea><br>
           <input type="submit" value="Convert">
-        </form> -->
+        </form>
        <table>
-         <!-- tabs have to use js to implement so I just use table here as a temp version -->
+    // tabs have to use js to implement so I just use table here as a temp version
           <tr>
 
             <td>
@@ -61,12 +61,40 @@
               <input type="submit" value="Convert">
             </td>
           </tr>
+       </table> -->
+        <div class="tab">
+         <button class="tablinks" onclick="openTab1(event, 'Standard')">Standard</button>
+         <button class="tablinks" onclick="openTab1(event, 'Adanvced')">Adanvced</button>
+        </div>
 
+        <div id="Standard" class="tabcontent">
+          <h3>Standard</h3>
+          <p>Standard Mode: default seting.</p>
+        </div>
 
+        <div id="Adanvced" class="tabcontent">
+          <h3>Adanvced</h3>
+          <p>Adanvced Version: self define.</p>
+        </div>
 
-       </table>
+        <div class="tab">
+         <button class="tablinks" onclick="openTab1(event, 'Links')">Links</button>
+         <button class="tablinks" onclick="openTab1(event, 'Adanvced')">Text</button>
+        </div>
 
+        <div id="Links" class="tabcontent">
+          <h3>Links</h3>
+          <p>Put links here.</p>
+        </div>
 
+        <div id="Text" class="tabcontent">
+          <h3>Text</h3>
+          <p>Put text here.</p>
+        </div>
+
+        <textarea rows="4" cols="50" name="comment" form="usrform">
+          Put your links here...</textarea><br>
+        <input type="submit" value="Convert">
       </section>
 
       <footer>

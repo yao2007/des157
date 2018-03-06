@@ -1,13 +1,23 @@
 
 h1 {
-  color:deepblue;
+  color:darkblue;
 }
-
+#container {
+  /*border: red 1px solid;*/
+  width: 860px;
+  min-height: 1000px;
+  margin: auto;
+  background-color: white
+}
 body {
+
   font-family: Georgia, sans-serif;
   color: #666;
   font-size: 12px;
   font-weight: bold;
+}
+section{
+  border: lightblue 3px solid;
 }
 
 table {
@@ -45,4 +55,8 @@ td {
 
 input, select {
   border: 1px solid #ccc;
+}
+
+footer{
+  background-color: lightblue;
 }
