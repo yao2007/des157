@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Interactive Wireframe</title>
-    <link href="_css/styless.css" rel="stylesheet">
+    <title>Interactive Protoype 1</title>
+    <link href="_css/styless.css" rel="stylesheet"/>
     <script src="script.js"></script>
   </head>
 
@@ -83,19 +83,27 @@
         </div>
 
         <div id="Links" class="tabcontent2" >
-          <!-- <h3>Links</h3>
-          <p>Put links here.</p> -->
-          <textarea rows="4" cols="50" name="comment" form="usrform">
-            Put your links here...</textarea><br>
-          <input type="submit" value="Convert">
+          <tr>
+            <td>
+            <textarea id="ForLink"rows="4" cols="50" name="comment" form="usrform">Put your links here...</textarea><br>
+            </td>
+            <td>
+              <button class="buttonL" onclick="redirect()">Convert Link</button>
+            </td>
+          </tr>
         </div>
 
         <div id="Text" class="tabcontent2">
-          <!-- <h3>Text</h3>
-          <p>Put text here.</p> -->
-          <textarea rows="4" cols="50" name="comment" form="usrform">
-            Put your text here...</textarea><br>
-          <input type="submit" value="Convert">
+
+          <tr>
+            <td>
+            <textarea id="ForText" rows="4" cols="50" name="comment" form="usrform">Put your texts here...</textarea><br>
+            </td>
+            <td>
+              <!-- <input type="submit" value="Convert"> -->
+              <button class="buttonT" onclick="redirect2()">Convert Text</button>
+            </td>
+          </tr>
         </div>
 
 

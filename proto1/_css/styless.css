@@ -3,6 +3,7 @@ h1 {
 
   color:darkblue;
   text-align: center;
+  font-size: 38px;
   font-family: 'OpenDyslexic-Bold', sans-serif;
 }
 #container {
@@ -14,16 +15,19 @@ h1 {
   background-color: white
 }
 body {
-
-  margin-top: 160px;
-  font-family: 'OpenDyslexic-Bold', sans-serif;
+  font-family: 'OpenDyslexic-Regular', sans-serif;
+  margin-top: 60px;
   color: #666;
   font-size: 12px;
   /* font-weight: bold; */
 }
+textarea{
+  font-family: 'OpenDyslexic-Regular', sans-serif;
+}
+
 section{
 
-  border: lightblue 3px solid;
+  border: lightblue 5px solid;
 }
 
 table {
@@ -34,6 +38,8 @@ td {
   vertical-align: top;
   padding: 6px;
 }
+
+
 
 .ch1 {
   text-align: right;
@@ -56,11 +62,12 @@ td {
   text-transform: uppercase;
   padding: 6px;
   width: 110px;
-  font-family: 'OpenDyslexic-Bold', sans-serif;
+  font-family: 'OpenDyslexic-Italic', sans-serif;
 }
 
 input, select {
   border: 1px solid #ccc;
+  font-family: 'OpenDyslexic3-Bold', sans-serif;
 }
 
 footer{
@@ -82,6 +89,7 @@ footer{
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    font-family: 'OpenDyslexic-Regular', sans-serif;
     font-size: 17px;
 }
 
@@ -106,13 +114,13 @@ footer{
 @font-face {
   font-family: 'OpenDyslexic-Bold';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic-Boldotf.otf');
+  src: url('../_font/OpenDyslexic-Bold.otf')
 }
 
 @font-face {
   font-family: 'OpenDyslexic3-Bold';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic3-Bold.ttf') format('ttf');
+  src: url('../_font/OpenDyslexic3-Bold.ttf');
 }
 
 @font-face {
