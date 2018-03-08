@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Interactive Protoype 1</title>
+    <link href="_css/styless.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="container" >
+      <header>
+        <h1>Online Reading Auxiliary</h1>
+      </header>
+      <section>
+        <!-- <form action="/action_page.php" method="get">
+          <input type="checkbox" name="Standard" value="Standard" checked>Standard Mode<br>
+          <input type="checkbox" name="Adanvced" value="Adanvced">Adanvced Version<br>
+          <input type="checkbox" name="Links" value="Links" checked>Links<br>
+          <input type="checkbox" name="Text" value="Text" >Text<br>
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+            Put your links here...</textarea><br>
+          <input type="submit" value="Convert">
+        </form>
+       <table>
+    // tabs have to use js to implement so I just use table here as a temp version
+          <tr>
+
+            <td>
+              <label class="ch1">
+                <input type="radio" name="ch1" value="Standard"/>Standard Mode
+              </label>
+
+            </td>
+            <td>
+              <label class="ch1">
+               <input type="radio" name="ch1" value="Adanvced"/>Adanvced Version
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="ch2">
+                <input type="radio" name="ch2" value="Links"/>Links
+            </label>
+            </td>
+            <td>
+
+              <label class="ch2">
+               <input type="radio" name="ch2" value="Text"/>Text
+              </label>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+            <textarea rows="4" cols="50" name="comment" form="usrform">Put your links here...</textarea><br>
+            </td>
+            <td>
+              <input type="submit" value="Convert">
+            </td>
+          </tr>
+       </table> -->
+        <div class="tab">
+         <button class="tablinks" onclick="openTab1(event, 'Standard')">Standard</button>
+         <button class="tablinks" onclick="openTab1(event, 'Adanvced')">Adanvced</button>
+        </div>
+
+        <div id="Standard" class="tabcontent">
+          <h3>Standard</h3>
+          <p>Standard Mode: default seting.</p>
+        </div>
+
+        <div id="Adanvced" class="tabcontent">
+          <h3>Adanvced</h3>
+          <p>Adanvced Version: self define.</p>
+        </div>
+
+        <div class="tab">
+         <button class="tablinks2" onclick="openTab2(event, 'Links')">Links</button>
+         <button class="tablinks2" onclick="openTab2(event, 'Text')">Text</button>
+        </div>
+
+        <div id="Links" class="tabcontent2" >
+          <tr>
+            <td>
+            <textarea id="ForLink"rows="4" cols="50" name="comment" form="usrform">Put your links here...</textarea><br>
+            </td>
+            <td>
+              <button class="buttonL" onclick="redirect()">Convert Link</button>
+            </td>
+          </tr>
+        </div>
+
+        <div id="Text" class="tabcontent2">
+
+          <tr>
+            <td>
+            <textarea id="ForText" rows="4" cols="50" name="comment" form="usrform">Put your texts here...</textarea><br>
+            </td>
+            <td>
+              <!-- <input type="submit" value="Convert"> -->
+              <button class="buttonT" onclick="redirect2()">Convert Text</button>
+            </td>
+          </tr>
+        </div>
+
+
+      </section>
+
+      <footer>
+
+        <p><a href="mailto:yueyao@ucdavis.edu">Email</a> |
+        <!--you can also do href="mailto:your email address", here use http://wbwip.com/wbw/emailencoder.html to encode my email address-->
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>  |
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+        <!--target:open the link in other tag so that no leave your site-->
+      </footer>
+
+    </div><!--end container div(might have diffrent types of div??)-->
+
+  </body>
+</html>

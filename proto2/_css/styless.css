@@ -1,0 +1,148 @@
+
+h1 {
+
+  color:darkblue;
+  text-align: center;
+  font-size: 38px;
+  font-family: 'OpenDyslexic-Bold', sans-serif;
+}
+#container {
+
+  /*border: red 1px solid;*/
+  width: 860px;
+  min-height: 1000px;
+  margin: auto;
+  background-color: white
+}
+body {
+  font-family: 'OpenDyslexic-Regular', sans-serif;
+  margin-top: 60px;
+  color: #666;
+  font-size: 12px;
+  /* font-weight: bold; */
+}
+textarea{
+  font-family: 'OpenDyslexic-Regular', sans-serif;
+}
+
+section{
+
+  border: lightblue 5px solid;
+}
+
+table {
+  width: 1020px;
+}
+
+td {
+  vertical-align: top;
+  padding: 6px;
+}
+
+
+
+.ch1 {
+  text-align: right;
+}
+
+.full-width {
+  width: 98%;
+  /* font-family: 'OpenDyslexicBold', monospace; */
+}
+
+.ch2 {
+  vertical-align: bottom;
+}
+
+#submit {
+  background-color: #f00;
+  border: 0;
+  color: #fff;
+  float: right;
+  text-transform: uppercase;
+  padding: 6px;
+  width: 110px;
+  font-family: 'OpenDyslexic-Italic', sans-serif;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  font-family: 'OpenDyslexic3-Bold', sans-serif;
+}
+
+footer{
+  text-align: center;
+  background-color: lightblue;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: 'OpenDyslexic-Regular', sans-serif;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic-Bold';
+  /*can be name any thing*/
+  src: url('../_font/OpenDyslexic-Bold.otf')
+}
+
+@font-face {
+  font-family: 'OpenDyslexic3-Bold';
+  /*can be name any thing*/
+  src: url('../_font/OpenDyslexic3-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenDyslexic-BoldItalic';
+  /*can be name any thing*/
+  src: url('../_font/OpenDyslexic-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'OpenDyslexic-Italic';
+  /*can be name any thing*/
+  src: url('../_font/OpenDyslexic-Italic.otf');
+}
+
+@font-face {
+  font-family: 'OpenDyslexic-Regular';
+  /*can be name any thing*/
+  src: url('../_font/OpenDyslexic-Regular.otf');
+}
+
+@font-face {
+  font-family: 'OpenDyslexicMono-Regular';
+  /*can be name any thing*/
+  src: url('../_font/OpenDyslexicMono-Regular.otf');
+}
