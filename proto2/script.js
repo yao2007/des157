@@ -27,13 +27,13 @@ function openTab2(evt, tab1Name) {
 }
 
 function redirect() {
-    var url = document.getElementById("ForLink").value;
-    window.open("url");
+    //var url = document.getElementById("ForLink").value;
+    window.open("https://mercury.postlight.com/web-parser/");
   }
 
 function redirect2() {
     var x = document.getElementById("ForText").value;
-    // document.getElementById("demo").innerHTML = x;
+    //document.getElementById("demo").innerHTML = x; //result.html
     var myWindow = window.open("", "MsgWindow", "width=200,height=100");
     myWindow.document.write("<p>"+ x + "</p>");
     myWindow.document.write("<p style='width:100%;'>");
