@@ -114,35 +114,35 @@ footer{
 @font-face {
   font-family: 'OpenDyslexic-Bold';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic-Bold.otf')
+  src: url('../font/OpenDyslexic-Bold.otf')
 }
 
 @font-face {
   font-family: 'OpenDyslexic3-Bold';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic3-Bold.ttf');
+  src: url('../font/OpenDyslexic3-Bold.ttf');
 }
 
 @font-face {
   font-family: 'OpenDyslexic-BoldItalic';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic-BoldItalic.otf');
+  src: url('../font/OpenDyslexic-BoldItalic.otf');
 }
 
 @font-face {
   font-family: 'OpenDyslexic-Italic';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic-Italic.otf');
+  src: url('../font/OpenDyslexic-Italic.otf');
 }
 
 @font-face {
   font-family: 'OpenDyslexic-Regular';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexic-Regular.otf');
+  src: url('../font/OpenDyslexic-Regular.otf');
 }
 
 @font-face {
   font-family: 'OpenDyslexicMono-Regular';
   /*can be name any thing*/
-  src: url('../_font/OpenDyslexicMono-Regular.otf');
+  src: url('../font/OpenDyslexicMono-Regular.otf');
 }
