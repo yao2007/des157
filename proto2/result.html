@@ -20,26 +20,41 @@
     @font-face {
       font-family: 'OpenDyslexic-Regular';
       /*can be name any thing*/
-      src: url('../_font/OpenDyslexic-Regular.otf');
+      src: url('../font/OpenDyslexic-Regular.otf');
     }
     </style>
+    <script>
+
+    // Function for retrieveing value from a cookie
+    function getCookie(c_name)
+    {
+        var i,x,y,ARRcookies=document.cookie.split(";");
+        for (i=0;i<ARRcookies.length;i++)
+        {
+            x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+            y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+            x=x.replace(/^\s+|\s+$/g,"");
+            if (x==c_name)
+            {
+                return unescape(y);
+            }
+        }
+    }
+
+    // Called on body's `onload` event
+    function init() {
+        // Retrieving the text input's value which was stored into a cookie
+        var mytext = getCookie("mytext");
+
+        // Writing the value in the document
+        document.write("passed value = "+mytext);
+    }
+    
+
+  </script>
   </head>
 
-  <body>
-    <div id="container" >
-      <p>Create at least three tasks for your target audience to test/accomplish during user testing. The tasks can be communicated as alert messages or printed out on paper (the room will be silent during testing)
+  <body onload="init();">
 
-
-
-Create a list of questions you will ask to understand/evaluate the audience member's experience/feedback. The evaluation questions can be asked orally or through written form
-
-
-
-Learn more about audience testing from usertesting.com (Links to an external site.)Links to an external site.
-
-
-
-Save as audience-test.html in the process folder.</p>
-    </div>
   </body>
 </html>

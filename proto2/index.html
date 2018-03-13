@@ -5,6 +5,28 @@
     <title>Dyslexia Online Reading Helper</title>
     <link href="css/styless.css" rel="stylesheet"/>
     <script src="script.js"></script>
+    <script type="text/javascript">//3/13
+        // Function for storing to cookie
+        function setCookie(c_name,value,exdays)
+        {
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+            document.cookie=c_name + "=" + c_value;
+        }
+
+        // Called on form's `onsubmit`
+        function tosubmit() {
+            // Getting the value of your text input
+            var fortext = document.getElementById("ForText").value;
+
+            // Storing the value above into a cookie
+            setCookie("mytext", fortext, 2);
+
+            return true;
+        }
+
+    </script>
   </head>
 
   <body>
@@ -64,7 +86,7 @@
        </table> -->
         <div class="tab">
          <button class="tablinks" onclick="openTab1(event, 'Standard')">Standard</button>
-         <button class="tablinks" onclick="openTab1(event, 'Adanvced')">Adanvced</button>
+         <button class="tablinks" onclick="openTab1(event, 'Adanvced') ">Login</button>
         </div>
 
         <div id="Standard" class="tabcontent">
@@ -73,8 +95,39 @@
         </div>
 
         <div id="Adanvced" class="tabcontent">
-          <h3>Adanvced</h3>
-          <p>Adanvced Version: self define.</p>
+          <!-- Button to open the modal login form -->
+          <button onclick="document.getElementById('id01').style.display='block';" action="result.html">Login</button>
+          <p>Login for using previous settings</p>
+          <!-- The Modal -->
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="imgcontainer">
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="containerlogin">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="containerlogin" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
         </div>
 
         <div class="tab">
@@ -96,13 +149,21 @@
         <div id="Text" class="tabcontent2">
 
           <tr>
-            <td>
+            <form name="myform" onsubmit="tosubmit();" action="result.html">
+
+              <textarea id="ForText" rows="4" cols="50" name="comment" form="usrform">Put your texts here...</textarea><br>
+              <input type="submit" value="Convert Text">
+
+            </form>
+            <!-- <td>
             <textarea id="ForText" rows="4" cols="50" name="comment" form="usrform">Put your texts here...</textarea><br>
             </td>
-            <td>
+            <td> -->
               <!-- <input type="submit" value="Convert"> -->
-              <button class="buttonT" onclick="redirect2()">Convert Text</button>
-            </td>
+              <!-- <button class="buttonT" onclick="redirect2()">Convert Text</button> -->
+              <!-- <button class="buttonT" onclick=="tosubmit()" action="result.html">Convert Text</button> -->
+
+            <!-- </td> -->
           </tr>
         </div>
 
