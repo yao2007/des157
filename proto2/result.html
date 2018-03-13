@@ -22,6 +22,11 @@
       /*can be name any thing*/
       src: url('../font/OpenDyslexic-Regular.otf');
     }
+    @font-face {
+      font-family: 'OpenDyslexic3-Bold';
+      /*can be name any thing*/
+      src: url('../font/OpenDyslexic3-Bold.ttf');
+    }
     </style>
     <script>
 
@@ -47,14 +52,18 @@
         var mytext = getCookie("mytext");
 
         // Writing the value in the document
-        document.write("passed value = "+mytext);
+
+        document.write("<p style='font-family:OpenDyslexic3-Bold,sans-serif;'>"+ "passed value = "+mytext+"</p>");
+        //document.getElementById("mytext").style.fontFamily = "OpenDyslexic-Regular,sans-serif";
     }
-    
+
 
   </script>
   </head>
 
-  <body onload="init();">
-
+  <body  onload="init();">// style="font-family:OpenDyslexic-Regular,sans-serif;"
+    <div>
+    <p> </p>
+  </div >
   </body>
 </html>
