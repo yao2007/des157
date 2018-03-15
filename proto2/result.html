@@ -53,17 +53,22 @@
 
         // Writing the value in the document
 
-        document.write("<p style='font-family:OpenDyslexic3-Bold,sans-serif;'>"+ "passed value = "+mytext+"</p>");
+        document.write( "passed value = "+mytext);
+        //document.write("<div>"+"<p style='font-family:OpenDyslexic3-Bold,sans-serif;'>"+ "passed value = "+mytext+"</p>"+"</div>");
         //document.getElementById("mytext").style.fontFamily = "OpenDyslexic-Regular,sans-serif";
     }
 
-
+   function returnhome(){
+     window.open('index.html', 3000)
+   }
   </script>
   </head>
 
-  <body  onload="init();">// style="font-family:OpenDyslexic-Regular,sans-serif;"
+  <body  onload="init();">
+
     <div>
     <p> </p>
+    <button class="tablinks2" onclick="returnhome();">return</button>
   </div >
   </body>
 </html>

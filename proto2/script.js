@@ -29,7 +29,7 @@ function openTab2(evt, tab1Name) {
 function redirect() {
     //var url = document.getElementById("ForLink").value;
     //window.open("https://mercury.postlight.com/web-parser/");
-    setTimeout(() => window.open('https://mercury.postlight.com/web-parser/'), 1000);
+    setTimeout(() => window.open('https://mercury.postlight.com/web-parser/'), 30);
   }
 
 function redirect2() {
