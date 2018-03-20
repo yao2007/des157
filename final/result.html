@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+
+    div {
+      margin: auto;
+      text-align: center;
+      width: 860px;
+      background:#f1f1f1;}
+    P{
+      color: darkblue;
+      background-color: #F7EEE7;
+      word-spacing: 2px;
+      line-height: 1.6;
+      font-family: 'OpenDyslexic-Regular', sans-serif;
+    }
+    @font-face {
+      font-family: 'OpenDyslexic-Regular';
+      /*can be name any thing*/
+      src: url('../font/OpenDyslexic-Regular.otf');
+    }
+    @font-face {
+      font-family: 'OpenDyslexic3-Bold';
+      /*can be name any thing*/
+      src: url('../font/OpenDyslexic3-Bold.ttf');
+    }
+    </style>
+    <script>
+
+    // Function for retrieveing value from a cookie
+    function getCookie(c_name)
+    {
+        var i,x,y,ARRcookies=document.cookie.split(";");
+        for (i=0;i<ARRcookies.length;i++)
+        {
+            x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+            y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+            x=x.replace(/^\s+|\s+$/g,"");
+            if (x==c_name)
+            {
+                return unescape(y);
+            }
+        }
+    }
+
+    // Called on body's `onload` event
+    function init() {
+        // Retrieving the text input's value which was stored into a cookie
+        var mytext = getCookie("mytext");
+
+        // Writing the value in the document
+
+        document.write( "passed value = "+mytext);
+        //document.write("<div>"+"<p style='font-family:OpenDyslexic3-Bold,sans-serif;'>"+ "passed value = "+mytext+"</p>"+"</div>");
+        //document.getElementById("mytext").style.fontFamily = "OpenDyslexic-Regular,sans-serif";
+    }
+
+   function returnhome(){
+     window.open('index.html', 3000)
+   }
+  </script>
+  </head>
+
+  <body  onload="init();">
+
+    <div>
+    <p> </p>
+    <button class="tablinks2" onclick="returnhome();">return</button>
+  </div >
+  </body>
+</html>
