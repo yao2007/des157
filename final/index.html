@@ -4,30 +4,12 @@
     <meta charset="UTF-8">
     <title>Dyslexia Online Reading Helper</title>
     <link href="css/styless.css" rel="stylesheet"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script type="text/javascript">//3/13
-        // Function for storing to cookie
-        function setCookie(c_name,value,exdays)
-        {
-            var exdate=new Date();
-            exdate.setDate(exdate.getDate() + exdays);
-            var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-            document.cookie=c_name + "=" + c_value;
-        }
 
-        // Called on form's `onsubmit`
-        function tosubmit() {
-            // Getting the value of your text input
-            var fortext = document.getElementById("ForText").value;
-
-            // Storing the value above into a cookie
-            setCookie("mytext", fortext, 2);
-
-            return true;
-        }
-
-    </script>
 
   </head>
 
@@ -37,57 +19,9 @@
         <h1>Online Reading Auxiliary</h1>
       </header>
       <section>
-        <!-- <form action="/action_page.php" method="get">
-          <input type="checkbox" name="Standard" value="Standard" checked>Standard Mode<br>
-          <input type="checkbox" name="Adanvced" value="Adanvced">Adanvced Version<br>
-          <input type="checkbox" name="Links" value="Links" checked>Links<br>
-          <input type="checkbox" name="Text" value="Text" >Text<br>
-          <textarea rows="4" cols="50" name="comment" form="usrform">
-            Put your links here...</textarea><br>
-          <input type="submit" value="Convert">
-        </form>
-       <table>
-    // tabs have to use js to implement so I just use table here as a temp version
-          <tr>
 
-            <td>
-              <label class="ch1">
-                <input type="radio" name="ch1" value="Standard"/>Standard Mode
-              </label>
-
-            </td>
-            <td>
-              <label class="ch1">
-               <input type="radio" name="ch1" value="Adanvced"/>Adanvced Version
-              </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label class="ch2">
-                <input type="radio" name="ch2" value="Links"/>Links
-            </label>
-            </td>
-            <td>
-
-              <label class="ch2">
-               <input type="radio" name="ch2" value="Text"/>Text
-              </label>
-
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-            <textarea rows="4" cols="50" name="comment" form="usrform">Put your links here...</textarea><br>
-            </td>
-            <td>
-              <input type="submit" value="Convert">
-            </td>
-          </tr>
-       </table> -->
         <div class="tab">
-         <button class="tablinks" onclick="openTab1(event, 'Adanvced') ">Login</button>
+         <button class="tablinks" onclick="openTab1(event, 'Adanvced') ">Account</button>
          <button class="tablinks" onclick="openTab1(event, 'Standard')">About</button>
         </div>
 
@@ -96,39 +30,13 @@
           <p>Dyslexia is a specific learning disability in reading. According to the definition given by Wikipedia, dyslexia, also known as reading disorder, is characterized by trouble with reading despite normal intelligence. Problems may include difficulties in spelling words, reading quickly, writing words, "sounding out" words in the head, pronouncing words when reading aloud and understanding what one reads. It affects 3–7% of the population, however, up to 20% may have some degree of symptoms. It has several different diagnosis, which are Central dyslexias, Peripheral dyslexias, and Neglect dyslexia.</p>
           <p>The cost of e-reading is much lower for people who have dyslexia instead of buying dyslexia fridendly book, because it is quick and easy to adjust the way text are displayed and fonts typed through browser extension. For example, people with dyslexia often reversals the alphabets, at this time a text font with heavy bottom and light top like OpenDyslexic will help them recognize letters correctly.</p>
           <p>It is easy to set a special text-font and install a suitable reading mode on a personal computer, but the public computers like schools' computers ro or libary's computers might not allow user to install any app. This website is design for this situation~ Users just need to open this website and convert text or context of a link anywhere. </p>
+          <svg id="svg" width="100" height="100"></svg>
+
+          <input id="buttonR" type="button" class="api_button" value="180°">
         </div>
 
         <div id="Adanvced" class="tabcontent">
-          <!-- Button to open the modal login form -->
-          <button onclick="document.getElementById('id01').style.display='block';" action="result.html">Login</button>
-          <p>Login for using previous settings (login to save self define seting first.) </p>
-          <!-- The Modal -->
-          <!-- <div id="id01" class="modal">
-            <span onclick="document.getElementById('id01').style.display='none'"
-          class="close" title="Close Modal">&times;</span>
 
-
-            <form class="modal-content animate" action="/action_page.php">
-
-              <div class="containerlogin">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-              </div>
-
-              <div class="containerlogin" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-              </div>
-            </form>
-          </div> -->
           <div class="form">
 
       <ul class="tab-group">

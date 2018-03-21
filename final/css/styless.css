@@ -85,6 +85,10 @@ a {
   display: none;
 }
 
+p{
+  font-size:18px;
+}
+
 h1 {
   text-align: center;
   color: $white;

@@ -49,8 +49,8 @@ function init() {
     //document.getElementById("mytext").style.fontFamily = "OpenDyslexic-Regular,sans-serif";
 }
 var bt = document.getElementById("buttonT");
-bt.addEventListener("mouseover", warntip);
-bt.addEventListener("mouseout", closewarntip);
+bt.addEventListener("mouseover", warntip());
+bt.addEventListener("mouseout", closewarntip());
 var tipw;
 function warntip(){
   tipw=setTimeout(tipalert(), 1);
@@ -171,3 +171,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+var svg = Snap("#svg");
+var c = svg.paper.rect(20, 20, 60, 60, 10).attr({
+    fill: "#000",
+});
+
+var rot = 0;
+document.getElementById("buttonR").onclick = function() {
+  alert('WORK');
+  console.log(click);
+    Snap.animate(rot, rot + 180, function(value) {
+console.log(svg);
+        rot = value;
+        c.transform(new Snap.Matrix().rotate(value, 50, 50));
+    }, 500);
+};

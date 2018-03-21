@@ -1,5 +1,5 @@
 h1 {
-  word-spacing: -30px;
+  word-spacing: -10px;
   color:darkblue;
   text-align:center;
   font-size: 32px;
@@ -10,8 +10,8 @@ div {
   margin: auto;
   text-align:justify;
   width: 860px;
-  background: orange;
-  box-shadow: 10px 10px 10px 10px #888888;
+
+  /* box-shadow: 10px 10px 10px 10px #888888; */
   /* background:#f1f1f1; */
 }
 P{
@@ -20,7 +20,7 @@ P{
   line-height: 1.8;
   text-align:justify;
   font-family: 'OpenDyslexic-Regular', sans-serif;
-  box-shadow: 10px 10px 10px 10px #888888;
+  /* box-shadow: 10px 10px 10px 10px #888888; */
 }
 @font-face {
   font-family: 'OpenDyslexic-Regular';
