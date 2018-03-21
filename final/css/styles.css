@@ -22,6 +22,9 @@ P{
   font-family: 'OpenDyslexic-Regular', sans-serif;
   /* box-shadow: 10px 10px 10px 10px #888888; */
 }
+img{
+  width: 860px;
+}
 @font-face {
   font-family: 'OpenDyslexic-Regular';
   /*can be name any thing*/
