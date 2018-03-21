@@ -1,0 +1,34 @@
+h1 {
+  word-spacing: -30px;
+  color:darkblue;
+  text-align:center;
+  font-size: 32px;
+  font-family: 'OpenDyslexic3-Bold', sans-serif;
+}
+div {
+  background-color: #F7EEE7;
+  margin: auto;
+  text-align:justify;
+  width: 860px;
+  background: orange;
+  box-shadow: 10px 10px 10px 10px #888888;
+  /* background:#f1f1f1; */
+}
+P{
+  color: darkblue;
+  word-spacing: 2px;
+  line-height: 1.8;
+  text-align:justify;
+  font-family: 'OpenDyslexic-Regular', sans-serif;
+  box-shadow: 10px 10px 10px 10px #888888;
+}
+@font-face {
+  font-family: 'OpenDyslexic-Regular';
+  /*can be name any thing*/
+  src: url('../font/OpenDyslexic-Regular.otf');
+}
+@font-face {
+  font-family: 'OpenDyslexic3-Bold';
+  /*can be name any thing*/
+  src: url('../font/OpenDyslexic3-Bold.ttf');
+}
