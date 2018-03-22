@@ -172,18 +172,35 @@ window.onclick = function(event) {
     }
 }
 
-var svg = Snap("#svg");
-var c = svg.paper.rect(20, 20, 60, 60, 10).attr({
-    fill: "#000",
-});
+// var svg = Snap("#svg");
+// var c = svg.paper.rect(20, 20, 60, 60, 10).attr({
+//     fill: "#000",
+// });
+//
+// var rot = 0;
+// document.getElementById("buttonR").onclick = function() {
+//   alert('WORK');
+//   console.log(click);
+//     Snap.animate(rot, rot + 180, function(value) {
+// console.log(svg);
+//         rot = value;
+//         c.transform(new Snap.Matrix().rotate(value, 50, 50));
+//     }, 500);
+// };
 
-var rot = 0;
-document.getElementById("buttonR").onclick = function() {
-  alert('WORK');
-  console.log(click);
-    Snap.animate(rot, rot + 180, function(value) {
-console.log(svg);
-        rot = value;
-        c.transform(new Snap.Matrix().rotate(value, 50, 50));
-    }, 500);
-};
+var s = Snap("#svg"); 
+
+//lets draw 2 rects at position 100,100 and then reposition them
+
+var r = s.rect(100,100,100,100).attr({fill: 'red' });
+
+var g = s.group(r);
+
+var bbox = g.getBBox();
+
+
+s.text(20, 20, bbox.cx);
+
+s.text(20, 40, bbox.cy);
+
+g.animate({ transform: 'r180,'+ bbox.cx + ',' + bbox.cy }, 1000, mina.bounce );

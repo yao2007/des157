@@ -24,6 +24,7 @@ P{
 }
 img{
   width: 860px;
+  margin: auto;
 }
 @font-face {
   font-family: 'OpenDyslexic-Regular';
